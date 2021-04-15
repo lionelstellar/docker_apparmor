@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# user data
+NAME='vtee'
+MOUNT_DIR=$(dirname `pwd`)
+
+
+/usr/bin/docker run --name $NAME \
+    -v $MOUNT_DIR:/data:z  \
+    -w /home  -itd ubuntu:18.04 /bin/bash

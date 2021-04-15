@@ -1,0 +1,4 @@
+#!/bin/bash
+NAME='tenant'
+/usr/bin/docker kill $NAME
+/usr/bin/docker rm $NAME

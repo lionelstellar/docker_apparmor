@@ -1,0 +1,5 @@
+#!/bin/bash
+# user data
+NAME='vtee'
+
+/usr/bin/docker exec -w /data -it $NAME /bin/bash

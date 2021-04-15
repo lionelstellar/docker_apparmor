@@ -1,0 +1,3 @@
+/etc/init.d/apparmor stop
+apparmor_parser -R /home/jiangyikun/docker_apparmor/apparmor_template/docker-test
+/etc/init.d/apparmor start

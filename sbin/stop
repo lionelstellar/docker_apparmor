@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/bin/docker kill test
+/usr/bin/docker rm test

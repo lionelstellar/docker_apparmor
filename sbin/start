@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# user data
+NAME='test'
+MOUNT_DIR=$(dirname $(dirname `which $0`))"/data"
+echo "host mount: "$MOUNT_DIR
+
+
+/usr/bin/docker run --name $NAME \
+    -v $MOUNT_DIR:/data  \
+    -w /home  -itd ubuntu.test:latest /bin/bash

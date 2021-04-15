@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HOME_DIR="/home/jiangyikun/docker_selinux/data"
+
+/usr/bin/docker exec -w /data -it test /bin/bash

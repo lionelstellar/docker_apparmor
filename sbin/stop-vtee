@@ -1,0 +1,4 @@
+#!/bin/bash
+NAME='vtee'
+/usr/bin/docker kill $NAME
+/usr/bin/docker rm $NAME

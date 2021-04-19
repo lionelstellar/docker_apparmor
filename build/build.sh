@@ -9,7 +9,7 @@ build_from_ubuntu_latest(){
     /usr/bin/docker build --rm \
         -f Dockerfile_0 \
         --network=host \
-        -t $CONTAINER_IMAGE .
+        -t $CONTAINER_IMAGE:basic .
 }
 
 build_from_ubuntu_test_basic(){

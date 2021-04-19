@@ -1,16 +1,15 @@
-FROM ubuntu:test
+FROM ubuntu:18.04
 
 COPY sources.list /etc/apt/
 COPY hello /usr/bin
 RUN apt-get update --fix-missing
 
 
-RUN apt-get install -y apt-utils 
-RUN apt-get install -y python3 
-RUN apt-get install -y vim 
-RUN apt-get install -y python3-pip 
-RUN apt-get install -y iputils-ping 
+RUN apt-get install -y apt-utils
+RUN apt-get install -y python3
+RUN apt-get install -y vim
+RUN apt-get install -y python3-pip
+RUN apt-get install -y iputils-ping
 RUN apt-get install -y net-tools
 
 RUN pip3 install requests
-

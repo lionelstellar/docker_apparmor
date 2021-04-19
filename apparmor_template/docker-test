@@ -1,6 +1,6 @@
 #include <tunables/global>profile docker-test flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
-  deny /home/jiangyikun/docker_apparmor/data/** rwl,
+  
 
   # internal access control
   deny /data/** rwl,
@@ -12,4 +12,5 @@
   capability,
   
   network tcp connect from 192.168.1.1 on iface1 to 1.1.1.1,
+  
 }
